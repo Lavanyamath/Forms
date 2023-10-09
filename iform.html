@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+</head>
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>personal details</legend>
+
+            <label for="uname">Name</label>
+            <input type="text" id="uname" name="uname" required pattern="[A-Z a-z]{3,7}">
+            <br><br>
+
+            <label for="number">PhoneNumber</label>
+           <input type="tel" name="number" id="number"  pattern="[6-9][0-9]{9}" required>
+           <!-- <form>
+            <label for="telephone">Telephone Number:</label>
+            <input type="tel" id="telephone" name="telephone" pattern="[0-9]-[0-9]{3}-[0-9]{4}" required>
+            <small>Format: 123-456-7890</small>
+            <br>
+            <input type="submit" value="Submit">
+          </form> -->
+          
+            <br><br>
+            <input type="submit">
+
+        </fieldset>
+        
+    </form>
+
+    
+</body>
+</html>

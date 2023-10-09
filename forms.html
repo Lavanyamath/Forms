@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        forms
+    </title>
+</head>
+<body>
+    <!--
+    <h1>forms </h1>
+    <h1>id:</h1>
+    <h3>in input.. takes the vaulue tht must b unique</h3>
+    <h1>for</h1>
+    <h3>in form.. must have the id value in it.. to say the input is for tht form</h3>
+    <h1>required</h1>
+    <h3>the field must b filled</h3>
+    <h1>placeholder</h1>
+    <h3>display the msg or info to the user</h3>
+    <h1>Name</h1>
+    <h3>Notice that each input field must have a name attribute to be submitted.<br>
+        If the name attribute is omitted, the value of the input field will not be sent at all.(will not b displyed in url place)
+        </h3>
+        <h1>Fieldset tag </h1>
+        <h3>this gives a border. draws a box around the related elements. </h3>
+        <h1>legend tag </h1>
+        <h3>is the child of fieldset tag. defines a caption for the fieldset element.</h3>
+
+<br><br><br>
+
+-->
+
+
+
+        <form action="">
+            <fieldset>
+                <legend>personal details</legend>
+            <label for="fname">FirstName</label>
+            <input type="text" required name="fname" id="fname" placeholder="abcd">
+            <br><br>
+            <label for="mname">MiddleName</label>
+            <input type="text" name="mname" id="mname"placeholder="efg">
+            <br><br>
+            <label for="lname">LastName</label>
+            <input type="text" name="name" id="lname"placeholder="math" required>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="abcd@gmail.com">
+            <br><br>
+            <label for="dob">DOB</label>
+            <input type="date" name="dob" id="dob" >
+            <br><br>
+
+           <!-- <input type="submit" name="" id=""> -->
+        </fieldset>
+        </form>
+
+        <br><br>
+
+        <!-- 
+            <p>name attribute must b same so the <b>radio</b> will not allow to click multiple options<p>
+            <br>
+            <h1>Datalist</h1>
+            <p> tag specifies a list of pre-defined options for an input element.<br>tag is used to provide an "autocomplete" feature
+                 for input elements. Users will see a drop-down list of pre-defined options as they input data.<br>
+                 element's id attribute must be equal to the input element's list attribute (this binds them together).</p>
+            -->
+
+
+        <form action="msg.html">
+        <fieldset>
+            <legend>Educational details</legend>
+
+            <label for="dept" ><strong>Dept</strong></label>
+            <br>
+
+            <input type="radio" id="cs" name="Dept">
+            <label for="cs">Cs</label>
+           
+            <input type="radio" id="ec" name="Dept">
+            <label for="ec">EC</label>
+            
+
+            <input type="radio" id="ise" name="Dept">
+            <label for="ise">Ise</label>
+            
+
+            <input type="radio" id="cv" name="Dept">
+            <label for="cv">Civil</label>
+            
+            <br><br>
+
+            <label for="yog"><b>YOG</b></label><br>
+            <input list="year" name="yog" id="yog">
+            <datalist id="year">
+                <option value="2020">
+                    <option value="2021">
+                        <option value="2022">
+                        <option value="2023">
+
+
+            </datalist>
+            <br><br>
+
+            <label for=""><b>Skills</b></label><br>
+
+            <input type="checkbox" name="skills" id="java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" name="skills" id="html">
+            <label for="html">HTML</label><br>
+            
+            <input type="checkbox" name="skills" id="css">
+            <label for="Css">CSS</label>
+            <br><br>
+
+            <input type="submit" name="" id="">
+
+
+
+        </fieldset>
+    </form>
+        
+    
+</body>
+</html>
